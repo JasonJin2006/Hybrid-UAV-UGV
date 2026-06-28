@@ -1,0 +1,75 @@
+# ====================
+# 编译产物 / Build Artifacts
+# ====================
+*.o
+*.obj
+*.elf
+*.hex
+*.bin
+*.map
+*.out
+*.a
+*.lib
+*.dll
+*.so
+*.dylib
+
+# IDE / Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.iml
+
+# 操作系统
+Thumbs.db
+.DS_Store
+.DS_Store?
+Desktop.ini
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+env/
+venv/
+.venv/
+
+# MATLAB
+*.asv
+
+# PCB设计备份 (Altium / KiCad / EAGLE)
+*.bak
+*-backup/
+*.BackupOf~
+*.lk
+
+# 日志 / 缓存
+*.log
+*.cache
+.cache/
+
+# 大型二进制文件（选择性追踪）
+*.pdf
+*.mp4
+*.avi
+*.mov
+*.mkv
+
+# 但保留项目根目录的学生手册和设计文档中的PDF
+!智能系统创新实践学生手册.pdf
+!docs/**/*.pdf
+!design/**/*.pdf
+!hardware/**/*.pdf
+
+# 标定数据 / 临时数据
+*.csv
+*.mat
+
+# 但保留实地测试数据
+!tests/field-trials/*.csv
+!tests/field-trials/*.mat
+
+# 打印机临时文件
+*.gcode
