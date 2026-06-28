@@ -35,15 +35,16 @@
   - 引用量：100+
   - 获取：AIAA（付费墙）
 
-### 1.2 有限状态机与决策树
+### 1.2 有限状态机与分层任务分配
 
-- **Sampigethaya, K., Poovendran, R. (2019).** "Autonomous UAV Mission Planning Using Hierarchical Finite State Machines." *IEEE Transactions on Aerospace and Electronic Systems*, vol. 55, no. 6.
-  - 提出分层FSM框架用于无人机自主任务执行，涵盖任务编排、异常处理与状态恢复
-  - 获取：IEEE Xplore（付费墙）
+- **Kurt, A., Özgüner, Ü. (2013).** "Hierarchical Finite State Machines for Autonomous Mobile Systems." *Control Engineering Practice*, vol. 21, no. 2, pp. 184–194. DOI: 10.1016/j.conengprac.2012.09.020.
+  - 提出适用于自主移动系统的分层有限状态机（HFSM）架构与迭代设计方法，涵盖元状态机设计、能力嫁接与多层级决策逻辑。通过在OSU-ACT自主车辆和UGV平台上的验证，展示了HFSM在复杂任务编排中的模块化与可扩展性
+  - 引用量：200+
+  - 获取：Elsevier（付费墙/预印本）
 
-- **Yan, F., et al. (2021).** "Multi-UAV Mission Planning Using Decision Trees and Expert Knowledge." *Aerospace Science and Technology*, vol. 119, 107167. DOI: 10.1016/j.ast.2021.107167.
-  - 使用决策树结合专家知识库实现多无人机协同任务规划，支持动态环境下的重规划
-  - 获取：Elsevier（付费墙）
+- **Chen, J., Xiao, K., You, K., Qing, X., Ye, F., Sun, Q. (2021).** "Hierarchical Task Assignment Strategy for Heterogeneous Multi-UAV System in Large-Scale Search and Rescue Scenarios." *International Journal of Aerospace Engineering*, vol. 2021, 7353697. DOI: 10.1155/2021/7353697.
+  - 针对大规模搜救场景中的异构多无人机系统提出分层任务分配策略，将全局任务分解为子任务并逐层匹配无人机能力，支持动态环境下的实时重分配
+  - 获取：Hindawi（开放获取）
 
 ---
 
@@ -140,4 +141,4 @@
 - 标注"付费墙"的论文可通过机构订阅或 Sci-Hub 获取
 - 标注"预印本"的论文可在 arXiv / ResearchGate 免费获取
 - 开源工具链部分推荐优先使用 ROS2 Humble / Jazzy 版本
-- 替换说明：原文件中第3条(Rovida 2017, 主题不符)、第12条(Mielniczek 2020, 不存在)、第14条(D'Angelo 2023, 不存在)、第15条(Li C 2022, 不存在)、第16条(Zhang K 2021, 不存在)、第17条(Ögren 2019, 不存在)已替换为真实可验证论文；第4条(Zhang X 2020)、第5条(Dai B 2022)、第8条(Schuster 2020)经搜索未找到确切匹配，已替换为同主题真实论文；第2条(Sprague 2021)标题修正为正确标题；第10条(Rösmann 2017)标题与DOI已修正。
+- 替换说明：原文件中第3条(Rovida 2017, 主题不符)、第12条(Mielniczek 2020, 不存在)、第14条(D'Angelo 2023, 不存在)、第15条(Li C 2022, 不存在)、第16条(Zhang K 2021, 不存在)、第17条(Ögren 2019, 不存在)已替换为真实可验证论文；第4条(Zhang X 2020)、第5条(Dai B 2022)、第8条(Schuster 2020)经搜索未找到确切匹配，已替换为同主题真实论文；第2条(Sprague 2021)标题修正为正确标题；第10条(Rösmann 2017)标题与DOI已修正；第6条(Sampigethaya 2019, 不存在)替换为Kurt & Özgüner (2013)真实HFSM论文；第7条(Yan 2021, 不存在)替换为Chen et al. (2021)真实异构多UAV任务分配论文。
