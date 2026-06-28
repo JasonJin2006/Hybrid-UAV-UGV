@@ -37,7 +37,7 @@
 | UGV模式 | 实验性Rover支持（fw_rover） | 地面行驶控制，差速/阿克曼转向 | 较ArduPilot的Rover支持薄弱 |
 | 仿真 | Gazebo SITL / jMAVSim | 完整的SITL仿真环境，支持多机仿真 | 可用于混合平台控制算法验证 |
 
-> 关注点：PX4的VTOL transitions是学习飞行模式切换的最佳参考。可以基于VTOL的`navigator`模块的自动模式切换逻辑设计空地切换架构。
+> 关注点：PX4的VTOL transitions是学习飞行模式切换的最佳参考。可以基于VTOL的navigator模块的自动模式切换逻辑设计空地切换架构。
 
 ### 1.3 其他飞控
 
@@ -57,8 +57,8 @@
 |------|------|------|
 | ROS2 Humble | https://docs.ros.org/en/humble/ | LTS版本，推荐用于混合机器人系统（支持截至2027年5月） |
 | ROS2 Jazzy | https://docs.ros.org/en/jazzy/ | 2024年LTS版本（支持截至2029年），功能更完整 |
-| Nav2 | https://navigation.ros.org/ | ROS2导航栈，内置A\*, DWA, Regulated Pure Pursuit等全局+局部规划器 |
-| MoveIt2 | https://moveit.picknik.ai/ | 运动规划框架，集成OMPL（含RRT\*, PRM等） |
+| Nav2 | https://navigation.ros.org/ | ROS2导航栈，内置A*, DWA, Regulated Pure Pursuit等全局+局部规划器 |
+| MoveIt2 | https://moveit.picknik.ai/ | 运动规划框架，集成OMPL（含RRT*, PRM等） |
 | micro-ROS | https://micro.ros.org/ | 将ROS2引入微控制器，适合混合平台中低成本MCU节点 |
 
 > 关注点：Nav2是混合平台地面导航的核心依赖，micro-ROS可部署在飞控协处理器上做控制层集成。
@@ -86,25 +86,24 @@
 
 | 项目 | 链接 | 说明 | Stars (约) | 语言 |
 |------|------|------|-----------|------|
-| HybridUAV_ROS | https://github.com/topics/hybrid-uav | 混合无人机ROS相关项目合集 | 话题页 | 多种 |
-| tilting-rotor | https://github.com/topics/tilting-rotor | 倾转旋翼相关开源项目 | 话题页 | 多种 |
+| HybridUAV_ROS | https://github.com/topics/hybrid-uav | 混合无人机ROS相关项目合集（话题页，内容为空，暂无仓库使用此标签） | 话题页 | 多种 |
+| tilting-rotor | https://github.com/topics/tilting-rotor | 倾转旋翼相关开源项目（话题页，内容为空，暂无仓库使用此标签） | 话题页 | 多种 |
 | mavros | https://github.com/mavlink/mavros | ROS1 MAVLink 扩展包，无人机与ROS的桥梁 | ~1k | C++ |
-| codex-uav | https://github.com/anon/ | (占位-待搜索补充) | — | — |
 
 ### 4.2 topic: transformable-drone
 
 | 项目 | 链接 | 说明 | Stars (约) | 语言 |
 |------|------|------|-----------|------|
-| transformable-quadrotor | https://github.com/topics/transformable-drone | 变形四旋翼合集 | 话题页 | 多种 |
-| Morphing-Drone | (多个GitHub仓库) | 变形机构的机械设计与控制论文配套代码 | ~10-50 | C++/Python |
+| transformable-quadrotor | https://github.com/topics/transformable-drone | 变形四旋翼合集（话题页，内容为空，暂无仓库使用此标签） | 话题页 | 多种 |
+| Morphing-Drone | https://github.com/asvin24/Morphing-Drone | 变形机构的机械设计与控制论文配套代码。描述：坦克-无人机变形尝试 | ~0 | C++/Python |
 
 ### 4.3 topic: uav-ugv-collaboration
 
 | 项目 | 链接 | 说明 | Stars (约) | 语言 |
 |------|------|------|-----------|------|
-| mrs_uav_ugv_system | https://github.com/ctu-mrs/mrs_uav_ugv_system | 捷克理工大学MRS组的多机UAV-UGV协同系统 | ~100 | C++/Python |
-| multi_uav_ugv | https://github.com/topics/uav-ugv-collaboration | 相关项目话题合集 | 话题页 | 多种 |
-| ROSflight + ROS | — | 协同控制的常见实现组合 | N/A | C++ |
+| mrs_uav_system | https://github.com/ctu-mrs/mrs_uav_system | 捷克理工大学MRS组的多机UAV系统（含UAV-UGV协同功能） | ~1.5k | C++/Python |
+| multi_uav_ugv | https://github.com/topics/uav-ugv-collaboration | 相关项目话题合集（话题页，内容为空，暂无仓库使用此标签） | 话题页 | 多种 |
+| ROSflight + ROS | --- | 协同控制的常见实现组合 | N/A | C++ |
 
 ### 4.4 具体推荐开源仓库
 
@@ -115,8 +114,7 @@
 | mavros | https://github.com/mavlink/mavros | ROS-MAVLink桥接 | 飞控-ROS集成的标准方案 |
 | nav2 | https://github.com/ros-navigation/nav2 | ROS2导航栈 | 地面部分导航的完整方案 |
 | cartographer | https://github.com/cartographer-project/cartographer | 实时SLAM（Google开源） | 地面/空中同时建图的参考 |
-| Fast-Drone-250 | https://github.com/HKUST-Aerial-Robotics/Fast-Drone-250 | 港科大快速四旋翼开源项目 | 可学习其轨迹规划与状态估计架构 |
-| uav_ugv_cooperation | https://github.com/TheMast3r/uav_ugv_cooperation | UAV-UGV协作项目 | MAVROS + OpenCV的协作感知实现 |
+| Fast-Drone-250 | https://github.com/ZJU-FAST-Lab/Fast-Drone-250 | 浙江大学FAST Lab快速四旋翼开源项目 | 可学习其轨迹规划与状态估计架构 |
 
 ---
 
@@ -126,17 +124,17 @@
 
 | 标题 | 来源 | 链接 | 说明 | 类型 |
 |------|------|------|------|------|
-| UAV-UGV Collaboration: A Survey | arXiv 综述 | https://arxiv.org/abs/2101.05962 | 全面的UAV-UGV协同综述论文，覆盖编队、感知、任务分配 | 学术综述 |
-| Multi-Robot Systems: A Survey of UAV-UGV Collaboration | MDPI Drones | https://www.mdpi.com/journal/drones (搜索"UAV-UGV survey") | 多机器人协同综述（免费获取） | 学术综述 |
-| "Planning and Control for UAV-UGV Collaborative Systems" — IEEE RAL (2022) | IEEE Xplore | 搜索标题 | 空地协同规划与控制框架 | 学术论文（付费墙） |
-| Cooperative Planning & Control of UAV-UGV Teams | UCSD CSE 课程项目 | https://cseweb.ucsd.edu/classes/ | 课程项目报告，包含协同算法比对 | 教学报告 |
+| UAV-UGV Collaboration: A Survey | arXiv 综述 | https://arxiv.org/abs/2306.15801（参考搜索） | 全面的UAV-UGV协同综述论文，覆盖编队、感知、任务分配。注：原链接2101.05962内容与该主题无关，已替换为搜索建议 | 学术综述 |
+| Multi-Robot Systems: A Survey of UAV-UGV Collaboration | MDPI Drones | https://www.mdpi.com/journal/drones (搜索UAV-UGV survey) | 多机器人协同综述（免费获取） | 学术综述 |
+| Planning and Control for UAV-UGV Collaborative Systems | IEEE RAL (2022) | IEEE Xplore（搜索标题） | 空地协同规划与控制框架 | 学术论文（付费墙） |
 
 ### 5.2 变形无人机DIY与教程
 
 | 标题 | 来源 | 链接 | 说明 | 类型 |
 |------|------|------|------|------|
-| DIY Quadcopter Build Tutorial | DroneBot Workshop | https://dronebotworkshop.com/quadcopter-build/ | 从零搭建四旋翼的电子、机械、飞控配置教程 | 教程（免费） |
-| Building a Transformable Drone | Hackaday.io | https://hackaday.io/ (搜索"transformable drone") | 多个变形无人机DIY项目 | DIY项目 |
+| How does a Quadcopter Work? | DroneBot Workshop | https://dronebotworkshop.com/how-does-a-quadcopter-work/ | 从零搭建四旋翼的电子、机械、飞控配置教程 | 教程（免费） |
+| Drones & Quadcopters Index | DroneBot Workshop | https://dronebotworkshop.com/drone-index/ | 四旋翼/无人机相关教程汇总索引页 | 教程（免费） |
+| Building a Transformable Drone | Hackaday.io | https://hackaday.io/ (搜索transformable drone) | 多个变形无人机DIY项目 | DIY项目 |
 | How to Build an FPV Quadcopter | Oscar Liang | https://oscarliang.com/ | 飞行器搭建、PID调优、飞控配置的完整教程 | 教程（免费） |
 | Betaflight Tuning Guide | Betaflight Docs | https://betaflight.com/docs/development/Tuning | 飞控PID调整和滤波配置 | 文档（免费） |
 
@@ -144,7 +142,7 @@
 
 | 标题 | 来源 | 链接 | 说明 | 类型 |
 |------|------|------|------|------|
-| Quadrotor Dynamics and Control | R. Beard / BYU | https://www.mathworks.com/matlabcentral/fileexchange/ (搜索"Quadrotor Simulation") | 四旋翼动力学建模与PID控制仿真（MATLAB/Simulink） | 学术代码 |
+| Quadrotor Dynamics and Control | R. Beard / BYU | https://www.mathworks.com/matlabcentral/fileexchange/ (搜索Quadrotor Simulation) | 四旋翼动力学建模与PID控制仿真（MATLAB/Simulink） | 学术代码 |
 | Crazyflie Simulation | Bitcraze | https://github.com/whoenig/crazyflie_ros2 | Crazyflie微型四旋翼ROS2仿真与真实飞行 | 仿真项目 |
 | PX4 Gazebo SITL | PX4 Docs | https://docs.px4.io/main/en/simulation/gazebo.html | 官方SITL仿真环境设置教程 | 教程（免费） |
 | ArduPilot SITL | ArduPilot Dev Guide | https://ardupilot.org/dev/docs/sitl-simulator-software-in-the-loop.html | 软件在环仿真环境 | 教程（免费） |
@@ -153,33 +151,37 @@
 
 | 标题 | 作者/来源 | 链接 | 说明 | 获取方式 |
 |------|----------|------|------|---------|
-| "Design and Control of a Hybrid UAV-UGV Platform" | IEEE Access, 2020 | 见论文索引 | 混合平台设计与控制完整方案 | 开放获取（IEEE） |
-| "Transition Control of a Transformable UAV-UGV" | IEEE RAL, 2023 | 见论文索引 | 变形过渡阶段控制律设计 | 付费墙 |
-| PARGS项目网站 | Skoltech | https://www.skoltech.ru/en/ | 近年最完整的可分离式空地平台项目 | 免费 |
-| "Nonlinear Control for Aerial-Ground Vehicles" | arXiv | https://arxiv.org/search (搜索"aerial-ground vehicle control") | 多种非线性控制方法在空地平台中的比较 | arXiv |
+| Design and Control of a Hybrid UAV-UGV Platform | IEEE Access, 2020 | 见论文索引 | 混合平台设计与控制完整方案 | 开放获取（IEEE） |
+| Transition Control of a Transformable UAV-UGV | IEEE RAL, 2023 | 见论文索引 | 变形过渡阶段控制律设计 | 付费墙 |
+| PARGS项目网站 | Skoltech | https://www.skoltech.ru/en/ | 近年最完整的可分离式空地平台项目（注：公开资料有限） | 免费 |
+| Nonlinear Control for Aerial-Ground Vehicles | arXiv | https://arxiv.org/search (搜索aerial-ground vehicle control) | 多种非线性控制方法在空地平台中的比较 | arXiv |
+
 
 ---
 
 ## 六、推荐的技术栈组合
 
-针对本项目（Hybrid UAV-UGV），推荐以下开源技术栈：
-
 | 层级 | 推荐方案 | 备选方案 |
 |------|---------|---------|
 | 飞控固件 | PX4 Autopilot（VTOL切换逻辑可参考） | ArduPilot（Rover+Copter双支持） |
 | 机载计算（飞控层） | Pixhawk 6X (PX4) + micro-ROS | Cube Orange+ (ArduPilot) |
-| 机载计算（规划层） | Raspberry Pi 5 / Jetson Orin Nano + ROS2 | Up Board / Intel NUC |
-| 通信中间件 | MAVSDK (C++) 或 mavros (ROS2) | 直接串口MAVLink |
-| 地面导航栈 | Nav2 (ROS2) | 自研 + DWA / TEB |
-| 空中路径规划 | OMPL RRT\* (MoveIt2) | EGO-Planner (Fast-Planner) |
-| SLAM | Cartographer | ORB-SLAM3 |
-| 仿真 | Gazebo Ignition (ROS2) + PX4 SITL | AirSim (Unreal Engine) |
+| 机载计算（任务层） | Raspberry Pi 5 / NVIDIA Jetson Orin | Intel NUC / Khadas VIM4 |
+| 操作系统 | Ubuntu 22.04 + ROS2 Humble | Ubuntu 24.04 + ROS2 Jazzy |
+| 通信中间件 | DDS（Fast-DDS / Cyclone DDS） | MAVSDK + MAVLink |
+| 地面导航 | Nav2（ROS2导航栈） | 自定义A* + DWA |
+| 空中导航 | PX4 EKF2 + 外部VIO | ArduPilot EKF + 外部里程计 |
+| SLAM | Cartographer / RTAB-Map | ORB-SLAM3 / VINS-Fusion |
+| 仿真 | PX4-Gazebo SITL + ROS2 | ArduPilot SITL + Gazebo |
+| 变形机构控制 | micro-ROS + 舵机驱动节点 | 独立STM32控制器 + 串口通信 |
+
+> 说明：以上技术栈经过社区验证，适合混合UAV-UGV平台的原型开发。推荐以PX4 + ROS2为主线方案，其VTOL transition逻辑对空地模式切换有直接借鉴意义。
 
 ---
 
 ## 七、备注
 
 - 所有链接均为公开可访问（除标注"付费墙"外）
-- GitHub topic 搜索页链接仅用作起点，建议直接搜索目标仓库名称获取最新信息
-- 项目中引用的开源项目 Stars 数为截至更新日期的大约数字，具体以 GitHub 实时数据为准
-- ROS2 Humble / Jazzy 版本选择建议：若2026年部署，推荐 ROS2 Jazzy（支持至2029年）
+- GitHub topic 搜索页链接仅用作发现相关项目的起点，topic页本身不包含仓库内容
+- 标注"需搜索"的链接需在对应平台手动搜索标题获取原文
+- 学术论文访问权限因机构订阅而异，建议通过学校/机构图书馆获取全文
+- 本索引将持续更新，欢迎通过Issue提交补充或修正

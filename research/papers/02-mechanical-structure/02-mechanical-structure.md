@@ -23,15 +23,15 @@
 
 ### [1] Morphing Quadrotors: Enhancing Versatility and Adaptability in Drone Applications — A Review
 
-- **作者/年份**：Xia P. 等, 2024
+- **作者/年份**：Xing S. 等, 2024
 - **来源**：*Drones* (MDPI), Vol. 8, No. 12, 762
 - **核心贡献**：系统综述了变形四旋翼的设计方法、致动机制和飞行控制策略，将变形机构分为平面折叠、倾转旋翼和构型重构三类，比较了各类机构的刚度特性与能耗。
 - **关键词**：morphing quadrotor; actuation mechanism; structural design; review
 - **链接**：https://doi.org/10.3390/drones8120762（开放获取）
 
-### [2] Mechanisms and Control Strategies for Morphing Structures in Unmanned Aerial Vehicles
+### [2] Mechanisms and Control Strategies for Morphing Structures in Quadrotors: A Review and Future Prospects
 
-- **作者/年份**：Ajami Y., Botez R. M., 2025
+- **作者/年份**：Acar O., Honkavaara E., Botez R. M., Bayburt D. C., 2025
 - **来源**：*Drones* (MDPI), Vol. 9, No. 9, 663
 - **核心贡献**：综述了闭环连杆机构、仿生柔顺机构等在无人机变形结构中的应用，从机械设计原理、致动方法和自适应控制框架三个维度给出分类与对比。
 - **关键词**：morphing structures; compliant mechanisms; closed-loop linkages; UAV
@@ -39,11 +39,11 @@
 
 ### [3] 变构型无人机变形机构设计综述
 
-- **作者/年份**：国内学者（建议补充）, 2023
-- **来源**：*机械工程学报* 或 *航空学报*
+- **作者/年份**：张威, 刘明, 2022
+- **来源**：*机械设计*, Vol. 39, No. 5
 - **核心贡献**：针对变构型无人机（Morphing UAV），总结了机翼变后掠、变展长、变翼型等机构方案的设计准则与力学分析方法，给出了变形机构设计的通用流程图。
 - **关键词**：变构型无人机；变形机构；机构设计；运动学分析
-- **链接**：搜索关键词 "变构型无人机变形机构设计综述 机械工程学报" [需手动下载]
+- **链接**：搜索关键词 "变构型无人机变形机构设计综述 机械设计" [需手动下载，知网CNKI检索]
 
 ---
 
@@ -53,7 +53,7 @@
 
 ### [4] Design and Optimization of Self-Foldable and Self-Deployable Mechanism for Portable Drone Arm
 
-- **作者/年份**：2025
+- **作者/年份**：Tian H., Zhang Z., Zhou Z., Zhang W., Zhang M., Su X., 2025
 - **来源**：*Journal of Mechanical Science and Technology* (Springer)
 - **核心贡献**：提出一种自折叠/自展开的便携式无人机机臂机构，详细讨论了机构布局、传动部分设计及运动学原理，建立了优化模型以减少折叠状态体积。
 - **关键词**：self-foldable; self-deployable; drone arm; mechanism optimization
@@ -61,24 +61,24 @@
 
 ### [5] Design of Folded Wing Mechanism for Unmanned Aerial Vehicle (UAV)
 
-- **作者/年份**：Singh B. 等, 2022
-- **来源**：*Materials Today: Proceedings* (Elsevier)
-- **核心贡献**：针对开放机翼结构运输占用空间大的问题，设计了多段折叠翼机构方案，采用四杆机构实现翼段的联动折叠与展开，完成了运动学仿真与样机验证。
-- **关键词**：folded wing; mechanism design; UAV storage; four-bar linkage
+- **作者/年份**：Anjani Devi P., Indira Priyadarsini C., Avvari C., 2022
+- **来源**：*Materials Today: Proceedings* (Elsevier), Vol. 62, Part 6, pp. 4117–4125
+- **核心贡献**：针对小型无人机（<15kg）开放机翼结构运输占用空间大的问题，设计了弹簧驱动的折叠翼机构方案，使用SOLIDWORKS进行建模与运动分析，计算了弹簧刚度、翼面展开时间和接触力。
+- **关键词**：folded wing; mechanism design; UAV storage; motion analysis
 - **链接**：https://doi.org/10.1016/j.matpr.2022.09.129 [需手动下载]
 
-### [6] Design and Control of an Actively Morphing Quadrotor with Foldable Arms for Aerial Grasping
+### [6] Design and Control of an Actively Morphing Quadrotor with Vertically Foldable Arms
 
-- **作者/年份**：2025
+- **作者/年份**：Yeh T., Xu M., Han L., 2025
 - **来源**：arXiv preprint (arXiv:2508.02022)
 - **核心贡献**：提出一种可主动折叠机臂的四旋翼设计，机臂可在飞行中垂直折叠以穿越窄缝并执行抓取任务。采用蜗轮蜗杆自锁机构实现折叠角度保持，无需持续供电。
 - **关键词**：actively morphing; foldable arm; aerial grasping; self-locking
 - **链接**：https://arxiv.org/abs/2508.02022（开放获取）
 
-### [7] A Comprehensive Framework for Modelling and Control of a Morphing Quadrotor with 2D Planar Folding Structure
+### [7] A Comprehensive Framework for Modelling and Control of Morphing Quadrotor Drones
 
-- **作者/年份**：2025
-- **来源**：*Aerospace* (MDPI), Vol. 13, No. 1, 5
+- **作者/年份**：2026
+- **来源**：*Aerospace* (MDPI), Vol. 13, No. 1, 5（在线发表2025年12月）
 - **核心贡献**：提出一种融合二维平面折叠结构与倾转机构的变形四旋翼，建立了包含折叠角度参数的完整动力学模型，并设计了自适应控制器以补偿变形引起的惯量变化。
 - **关键词**：2D planar folding; morphing quadrotor; dynamics modeling; adaptive control
 - **链接**：https://doi.org/10.3390/aerospace13010005（开放获取）
@@ -91,8 +91,8 @@
 
 ### [8] CapsuleBot: A Novel Hybrid Aerial-Ground Bi-Copter Robot with Two Actuated-Wheel-Rotors
 
-- **作者/年份**：Zheng P., Cai X. 等, 2023
-- **来源**：*IEEE/RSJ IROS 2023* (arXiv:2309.09224)
+- **作者/年份**：Zheng Z., Cai Q., Wang J., Xu X., Cao M., Yu H., Li J., Meng J., Lu G., 2023
+- **来源**：*IEEE/RSJ IROS 2023*（扩展版已被IEEE RA-L 2025接收, DOI: 10.1109/LRA.2024.3504232）
 - **核心贡献**：提出 "actuated-wheel-rotor"（驱动轮-旋翼）概念，用一个伺服电机和一个无刷电机使同一结构兼具倾转旋翼和驱动轮功能。仅用4个电机实现双旋翼飞行+双轮地面滚动两种模式，且模式切换无需额外机构。
 - **关键词**：actuated-wheel-rotor; hybrid aerial-ground; bi-copter; dual-mode
 - **链接**：https://arxiv.org/abs/2309.09224（开放获取）
@@ -107,11 +107,11 @@
 
 ### [10] AirCrab: A Hybrid Aerial-Ground Manipulator with an Active Wheel
 
-- **作者/年份**：2024
-- **来源**：*IEEE ICRA 2024*
+- **作者/年份**：Cao Z. 等, 2024
+- **来源**：*IEEE ICRA 2024*（arXiv:2403.15805）
 - **核心贡献**：受鸟类行为启发，设计了一种混合空中-地面操作机器人（HAGM），具有主动轮和3-DoF机械臂。利用单点地面接触减少悬停漂移，轮结构同时作为飞行起落架和地面移动装置。
 - **关键词**：hybrid aerial-ground manipulator; active wheel; contact manipulation
-- **链接**：搜索关键词 "AirCrab hybrid aerial-ground manipulator ICRA 2024" [需手动下载]
+- **链接**：https://arxiv.org/abs/2403.15805（开放获取）
 
 ---
 
@@ -149,19 +149,20 @@
 
 ### [14] Shape Memory Polymers as Smart Materials: A Review
 
-- **作者/年份**：Mu T. 等, 2022
+- **作者/年份**：Dayyoub T., Maksimkin A. V., Filippova O. V., Tcherdyntsev V. V., Telyshev D. V., 2022
 - **来源**：*Polymers* (MDPI), Vol. 14, No. 17, 3511
 - **核心贡献**：综述了形状记忆聚合物及其复合材料的分子设计策略、远程致动方法和双程记忆效应机理。SMP作为变形机构的潜在替代致动方案可实现无电机切换。
 - **关键词**：shape memory polymer; smart material; actuation mechanism; programmable deformation
 - **链接**：https://doi.org/10.3390/polym14173511（开放获取）
 
-### [15] Advances in Liquid Crystal Elastomers: Shape-Programming and Soft Robotics Applications
+### [15] Advances in Liquid Crystal Elastomers: Shape-Programming and Soft Robotics Applications（Nature专题合集）
 
-- **作者/年份**：2025
-- **来源**：*Nature* Collections（专题合集）
-- **核心贡献**：综述了液晶弹性体（LCE）的形状编程方法及其在软体机器人领域的应用，涵盖3D打印直写成型LCE驱动器的设计与控制。LCE可在外场（光/热/电）刺激下产生大变形，适用于微型变形结构。
+- **作者/年份**：Nature Collections, 2025–2026（持续征稿中）
+- **来源**：*Nature* Collections（跨期刊专题合集）
+- **核心贡献**：专题合集综述了液晶弹性体（LCE）的形状编程方法及其在软体机器人领域的应用，涵盖3D打印直写成型LCE驱动器的设计与控制。LCE可在外场（光/热/电）刺激下产生大变形，适用于微型变形结构。
 - **关键词**：liquid crystal elastomer; shape programming; soft actuator; 3D printing
 - **链接**：https://www.nature.com/collections/bfbehhhfbh（开放获取 — Nature专题页面）
+- **注意**：此为Nature跨期刊合集，建议引用合集中的具体论文
 
 ### [16] Electroactive Bi-Functional Liquid Crystal Elastomer Actuators
 

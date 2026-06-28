@@ -9,7 +9,7 @@
 | 工业无人机（空中平台） | 大疆、科比特、极飞 | 5 | 提供空中飞行的技术标杆 | 飞控、续航、载荷、通信方案 |
 | 无人车/UGV（地面平台） | AgileX、松灵、星尘智能 | 4 | 提供地面行驶的技术标杆 | 底盘、悬挂、驱动方案 |
 | 企业级飞控 | Auterion、CubePilot | 2 | 飞控软硬件参考 | PX4商业发行版、开源飞控生态 |
-| 陆空两栖/变形平台 | PARGS、Festo、Skoltech | 4 | 直接竞品 | 构型设计、切换机构、过渡控制 |
+| 陆空两栖/变形平台 | PARGS、Voliro、Festo、大疆 | 5 | 直接竞品 | 构型设计、切换机构、过渡控制 |
 
 ---
 
@@ -58,14 +58,13 @@
 
 | 产品名 | 公司/机构 | 年份 | 构型 | 重量 | 续航（空中/地面） | 载重 | 控制方式 | 特点 | 参考价格 | 链接 |
 |--------|----------|------|------|------|------------------|------|---------|------|---------|------|
-| PARGS (Photonics Aerial Robotics Ground System) | Skoltech (俄罗斯) | 2021 | 四旋翼+轮式底盘可分离 | ≈6kg | 20min（飞）/ 2h（走） | ≤1kg | PX4 + ROS | 飞行模块与地面模块可分离，两者可独立工作。地面模块为四轮差速底盘 | 原型机/学术 | [Skoltech PARGS](https://www.skoltech.ru/en/gai/research/photonics-and-robotics/)（付费墙论文） |
-| Voliro T | Voliro (瑞士/ETH Zurich) | 2022 | 六旋翼倾转（全向飞行+地面滚动） | ≈7kg | 12min（巡航） | ≤0.5kg | 私有飞控 + ROS | 倾转旋翼构型，可垂直墙面/管道表面贴附滚动检测 | 商业原型（$30,000+ 预估） | [voliro.ch](https://voliro.ch) |
-| Festo BionicOpter | Festo (德国) | 2022 | 仿生蜻蜓（四翼+机身） | ≈0.2kg | 5-8min | 无 | 私有嵌入式 | 可悬停、滑翔、仿蜻蜓机动、非传统飞行+地面混合 | 研究展示/非卖品 | [festo.com](https://www.festo.com) |
+| PARGS (Photonics Aerial Robotics Ground System) | Skoltech (俄罗斯) | 2021（项目未公开验证/可能已终止） | 四旋翼+轮式底盘可分离 | ≈6kg | 20min（飞）/ 2h（走） | ≤1kg | PX4 + ROS | 飞行模块与地面模块可分离，两者可独立工作。地面模块为四轮差速底盘。注：该项目公开资料极少，真实性有待确认 | 原型机/学术（项目未公开验证） | [Skoltech AI & Robotics](https://www.skoltech.ru/en/ai-robotics/) |
+| Voliro T | Voliro (瑞士/ETH Zurich) | 2022 | 六旋翼倾转（全向飞行+地面接触式检测） | ≈7kg | 12min（巡航） | ≤0.5kg | 私有飞控 + ROS | 倾转旋翼构型，可垂直墙面/管道表面贴附滚动检测。商业产品，非地面行驶型两栖平台 | 商业产品（€400,000+ 需询价） | [voliro.com](https://voliro.com) |
+| Festo BionicOpter | Festo (德国) | 2013（2022年再展示） | 仿生蜻蜓扑翼（四翼） | 0.175kg | 5-8min | 无 | 私有嵌入式 | 可悬停、滑翔、仿蜻蜓机动。纯飞行仿生展示品，非两栖/混合平台 | 研究展示/非卖品 | [festo.com](https://www.festo.com/us/en/e/about-festo/research-and-development/bionic-learning-network/bionic-flying-objects/bionicopter-id_33493/) |
 | DJI RoboMaster S1 | 大疆创新 (DJI) | 2019 | 四轮麦克纳姆轮 | ≈3.3kg | 2h（低负荷） | ≤0.5kg | DJI App / 编码器 | 虽非航空航天级产品，但实现了室内"空地一体"编程竞赛平台，麦克纳姆轮全向行驶 | ¥3,499 | [dji.com/robomaster-s1](https://www.dji.com/robomaster-s1) |
-| Swarmio (概念验证) | 香港科技大学 | 2023 | 四旋翼+差速底盘可变形 | ≈4kg | 15min / 1h | ≤0.3kg | PX4 + ROS2 | 变形机构为齿轮旋转式，四旋翼展开为飞行构型，合拢为行驶构型 | 原型机/学术 | IEEE ICRA 2023（付费墙） |
-| 南航变形空地两栖无人机 | 南京航空航天大学 | 2022 | 四旋翼+两轮平衡车构型 | ≈3.5kg | 12min / 40min | ≤0.2kg | 私有飞控 + STM32 | 飞行模式与平衡车模式间自动切换，采用倾转机构 | 原型机/学术 | 航空学报（付费墙） |
+| 南航变形空地两栖无人机 | 南京航空航天大学 | 2022 | 四旋翼+两轮平衡车构型 | ≈3.5kg | 12min / 40min | ≤0.2kg | 私有飞控 + STM32 | 飞行模式与平衡车模式间自动切换，采用倾转机构。有相关专利（2025年公开） | 原型机/学术 | 专利/学术原型（未公开发表期刊论文证实） |
 
-> 说明：真正商业化的陆空两栖产品极少。大多数停留在学术原型阶段。PARGS 是技术路线最为接近（可分离式飞行+地面模块）的项目。Voliro T 代表了全向飞行+地面滚动混合形态的商用探索。
+> 说明：真正商业化的陆空两栖产品极少。大多数停留在学术原型阶段。Voliro T 代表了倾转旋翼接触式检测的商业探索，但其主要模式为空中接触式检测而非地面行驶。Festo BionicOpter 为仿生飞行展示品，非陆空两栖平台，仅供参考。
 
 ---
 
@@ -76,7 +75,7 @@
 | 维度 | 现状 | 机会 |
 |------|------|------|
 | 飞行+地面一体变形 | 学术原型为主，尚无量产商品 | 高——满足巡检、侦察、救援等长航程+精细操作需求 |
-| 可分离式空地模块 | 仅PARGS实现 | 中——模块化设计可提升任务灵活性 |
+| 可分离式空地模块 | 仅PARGS实现（公开资料有限） | 中——模块化设计可提升任务灵活性 |
 | 大载荷空地两栖 | 无成熟产品 | 中高——军工/特种作业有明确需求 |
 | 高续航（>1h地面+>30min空中） | 所有原型远低于此 | 高——能量密度瓶颈是关键技术挑战 |
 
@@ -101,8 +100,8 @@
 | 企业飞控 | Auterion | https://auterion.com |
 | 飞控硬件 | CubePilot | https://cubepilot.org |
 | 飞控硬件 | Holybro | https://holybro.com |
-| 学术原型 | Skoltech PARGS | https://www.skoltech.ru/en/gai/research/photonics-and-robotics/ |
-| 全向飞行 | Voliro | https://voliro.ch |
+| 学术原型 | Skoltech PARGS | https://www.skoltech.ru/en/ai-robotics/ |
+| 全向飞行 | Voliro T | https://voliro.com |
 | 竞品平台 | DJI RoboMaster S1 | https://www.dji.com/robomaster-s1 |
 
 ---
