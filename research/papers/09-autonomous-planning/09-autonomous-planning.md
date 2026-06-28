@@ -62,9 +62,10 @@
   - 引用量：800+
   - 获取：Springer（付费墙 / 预印本可查）
 
-- **Pohl, D., et al. (2021).** "RRT\*-Based Path Planning for UGV Navigation in Rough Terrain with Traversability Analysis." *IEEE/RSJ IROS 2021*, pp. 6800–6807. DOI: 10.1109/IROS51168.2021.9636304.
-  - 结合RRT\*与地形可通行性分析，实现UGV在崎岖地形中的安全路径规划
-  - 获取：IEEE Xplore（付费墙）
+- **Jian, Z., Lu, Z., Zhou, X., Lan, B., Xiao, A., Wang, X., Liang, B. (2022).** "PUTN: A Plane-fitting based Uneven Terrain Navigation Framework." *IEEE/RSJ IROS 2022*, pp. 9160–9167. DOI: 10.1109/IROS47612.2022.9981038.
+  - 提出PF-RRT\*（基于平面拟合的RRT\*变体）结合地形可通行性评估与高斯过程回归，实现UGV在崎岖不平地形中的全局路径规划与局部NMPC控制。代码开源（清华AIR实验室）
+  - 引用量：60+
+  - 获取：IEEE Xplore（付费墙/arXiv:2203.04541开放获取）
 
 ### 2.2 局部路径规划 — DWA、TEB
 
@@ -141,4 +142,4 @@
 - 标注"付费墙"的论文可通过机构订阅或 Sci-Hub 获取
 - 标注"预印本"的论文可在 arXiv / ResearchGate 免费获取
 - 开源工具链部分推荐优先使用 ROS2 Humble / Jazzy 版本
-- 替换说明：原文件中第3条(Rovida 2017, 主题不符)、第12条(Mielniczek 2020, 不存在)、第14条(D'Angelo 2023, 不存在)、第15条(Li C 2022, 不存在)、第16条(Zhang K 2021, 不存在)、第17条(Ögren 2019, 不存在)已替换为真实可验证论文；第4条(Zhang X 2020)、第5条(Dai B 2022)、第8条(Schuster 2020)经搜索未找到确切匹配，已替换为同主题真实论文；第2条(Sprague 2021)标题修正为正确标题；第10条(Rösmann 2017)标题与DOI已修正；第6条(Sampigethaya 2019, 不存在)替换为Kurt & Özgüner (2013)真实HFSM论文；第7条(Yan 2021, 不存在)替换为Chen et al. (2021)真实异构多UAV任务分配论文。
+- 替换说明：原文件中第3条(Rovida 2017, 主题不符)、第12条(Mielniczek 2020, 不存在)、第14条(D'Angelo 2023, 不存在)、第15条(Li C 2022, 不存在)、第16条(Zhang K 2021, 不存在)、第17条(Ögren 2019, 不存在)已替换为真实可验证论文；第4条(Zhang X 2020)、第5条(Dai B 2022)、第8条(Schuster 2020)经搜索未找到确切匹配，已替换为同主题真实论文；第2条(Sprague 2021)标题修正为正确标题；第10条(Rösmann 2017)标题与DOI已修正；第6条(Sampigethaya 2019, 不存在)替换为Kurt & Özgüner (2013)真实HFSM论文；第7条(Yan 2021, 不存在)替换为Chen et al. (2021)真实异构多UAV任务分配论文；第9条(Pohl 2021, 不存在)替换为Jian et al. (2022) PUTN (PF-RRT*) 真实论文。
